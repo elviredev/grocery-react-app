@@ -1,0 +1,19 @@
+ .cartOffcanvas{
+    width: 500px !important;
+}
+
+
+.cartOffcanvas .btn-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.offcanvas.cartOffcanvas {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Animation custom Offcanvas Navbar */
+.offcanvas.navbarOffcanvas {
+  transition: transform 0.45s ease-in-out;
+}
