@@ -1,0 +1,82 @@
+.slider-section .carousel-item .carousel-caption {
+    position: absolute;
+    top: 50%;
+    width: 75%;
+    left: 6%;
+    text-align: left;
+    padding: 0;
+    bottom: unset !important;
+    right: unset !important;
+    transform: translate3d(250%, -50%, 0);
+    transition: all 0.75s ease 0s;
+}
+
+.slider-section .carousel-item.active .carousel-caption {
+    transform: translate3d(5%, -50%, 0);
+}
+
+.slider-section .carousel-item .carousel-caption h3 {
+    color: #031403;
+}
+
+.slider-section .carousel-item .carousel-caption p {
+    color: #4b5563;
+    font-size: var(--fs-body);
+    line-height: 24px;
+}
+
+.slider-section .carousel-control-prev,
+.slider-section .carousel-control-next {
+    display: none;
+}
+
+.slider-section .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.slider-section .carousel-indicators [data-bs-target] {
+    background: none;
+    border: 2px solid var(--clr-primary);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider-section .carousel-indicators [data-bs-target]:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.slider-section .carousel-indicators [data-bs-target]::after {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+    width: 75%;
+    height: 75%;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s;
+}
+
+.slider-section .carousel-indicators .active::after {
+    opacity: 1;
+    transform:  translate(-50%, -50%) scale(1);
+}
+
+@media only screen and (max-width: 769px) {
+    .slider-section .carousel-item img {
+        height: 300px;
+    }
+
+    .slider-section .carousel-caption {
+        width: 90%;
+    }
+}
