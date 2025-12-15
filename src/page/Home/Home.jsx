@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from '../../components/Slider/Slider'
 import { Col, Container, Row } from 'react-bootstrap'
 import { featureData } from '../../utils/data'
+import Categories from '../../components/Categories/Categories'
 
 const Home = () => {
   return (
@@ -31,6 +32,8 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
+      <Categories />
     </>
   )
 }

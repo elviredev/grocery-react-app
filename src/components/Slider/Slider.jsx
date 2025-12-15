@@ -19,7 +19,7 @@ const Slider = () => {
           sliderData.map((item, index) => {
             return (
               <Carousel.Item key={index}>
-                <img src={item.image} alt="banner image" className='img-fluid' />
+                <img src={item.image} alt="banner" className='img-fluid' />
                 <Carousel.Caption>
                   <h3 className='main-heading' dangerouslySetInnerHTML={{__html:item.heading}}></h3>
                   <p className='mt-3'>{item.title}</p>
