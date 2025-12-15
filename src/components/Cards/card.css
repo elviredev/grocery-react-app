@@ -1,3 +1,43 @@
+.product-wrapper {
+    transition: 0.3s ease-in-out;
+}
+
+.product-wrapper:hover {
+    box-shadow: var(--bs-box-shadow-sm) !important;
+}
+
+.product-wrapper .card-product-action {
+    display: none;
+}
+
+.product-wrapper .card-product-action .btn-action {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    color: var(--clr-text);
+    display: inline-block;
+    font-size: 14px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.product-wrapper:hover .card-product-action {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.product-wrapper .card-footer {
+    background: none !important;
+}
+
 
 .card:hover {
     transform: translateY(-2px);

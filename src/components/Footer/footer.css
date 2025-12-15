@@ -1,0 +1,22 @@
+.footer {
+    color: var(--clr-white);
+    background: #000;
+}
+
+.footer h6 {
+    color: var(--clr-white);
+}
+
+.footer ul li a {
+    color: var(--clr-text);
+}
+
+.footer .nav-link {
+font-size: var(--fs-body);
+  color: var(--clr-secondary);
+}
+
+.footer .nav-link:hover {
+  color: var(--clr-white);
+  cursor: pointer;
+}
