@@ -3,19 +3,25 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './page/Home/Home';
+import Theme from './components/Theme/Theme';
+import { ThemeContextProvider } from './contexts/ThemeContext';
 
 function App() {
   return (
    <>
-    <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-      </Routes>
+   <ThemeContextProvider>
+      <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
 
 
-    <Footer />
+      <Footer />
+      <Theme />
+    </ThemeContextProvider>
    </>
   );
 }
 
 export default App;
+
